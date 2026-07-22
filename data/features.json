@@ -1,0 +1,32 @@
+[
+  {
+    "id": "f1",
+    "title": "Curated Curriculum",
+    "description": "Expertly designed learning paths tailored for corporate environments, ensuring highly relevant and practical skill acquisition."
+  },
+  {
+    "id": "f2",
+    "title": "Live Mentorship",
+    "description": "Direct access to industry veterans who provide actionable feedback, personalized guidance, and real-world insights."
+  },
+  {
+    "id": "f3",
+    "title": "Real-time Analytics",
+    "description": "Comprehensive dashboards tracking learner progress, engagement metrics, and ROI for your training investments."
+  },
+  {
+    "id": "f4",
+    "title": "Cohort Learning",
+    "description": "Collaborative group-based models that foster peer accountability, networking, and a shared learning experience."
+  },
+  {
+    "id": "f5",
+    "title": "Custom Programs",
+    "description": "Bespoke educational solutions aligned with your unique business goals, culture, and specific organizational challenges."
+  },
+  {
+    "id": "f6",
+    "title": "Industry Certifications",
+    "description": "Recognized credentials upon completion, empowering your workforce and validating their newly acquired expertise."
+  }
+]

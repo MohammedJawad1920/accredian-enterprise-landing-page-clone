@@ -1,0 +1,26 @@
+[
+  {
+    "id": "p1",
+    "title": "Data Science & AI",
+    "description": "Equip your teams with cutting-edge analytical skills and machine learning expertise to drive data-informed decision making across the enterprise.",
+    "image": "/images/data-science-v2.webp"
+  },
+  {
+    "id": "p2",
+    "title": "Digital Transformation",
+    "description": "Navigate complex technological shifts and modernize your organizational infrastructure with comprehensive strategy and execution frameworks.",
+    "image": "/images/digital-transformation-v2.webp"
+  },
+  {
+    "id": "p3",
+    "title": "Project Management",
+    "description": "Master agile methodologies, risk mitigation, and resource allocation to deliver enterprise-scale initiatives on time and under budget.",
+    "image": "/images/project-management-v2.webp"
+  },
+  {
+    "id": "p4",
+    "title": "Senior Management",
+    "description": "Develop visionary leaders capable of steering large-scale organizational growth, fostering innovation, and managing cross-functional teams.",
+    "image": "/images/senior-management-v2.webp"
+  }
+]

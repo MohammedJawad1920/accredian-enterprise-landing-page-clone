@@ -1,0 +1,23 @@
+[
+  {
+    "id": "t1",
+    "quote": "This platform completely revolutionized how we approach upskilling. The cohort-based model accelerated our internal capability building by months.",
+    "name": "Sarah Jenkins",
+    "title": "Chief Human Resources Officer",
+    "company": "Nexus Global Industries"
+  },
+  {
+    "id": "t2",
+    "quote": "The tailored curriculum matched exactly what our engineering teams needed to transition smoothly into advanced AI applications.",
+    "name": "David O'Connor",
+    "title": "VP of Learning & Development",
+    "company": "StellarTech Solutions"
+  },
+  {
+    "id": "t3",
+    "quote": "We saw a measurable 40% increase in project delivery speed after putting our management layer through their custom training modules.",
+    "name": "Elena Rostova",
+    "title": "Director of Talent Acquisition",
+    "company": "Meridian Financial"
+  }
+]
