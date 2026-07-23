@@ -58,8 +58,8 @@ export const HowItWorks: React.FC = () => {
                 <div className="hidden lg:block w-[45%]" />
 
                 {/* Card Content */}
-                <div className="ml-16 lg:ml-0 w-full lg:w-[45%] relative group">
-                  <Card className="relative overflow-hidden p-8 hover:-translate-y-2 transition-all duration-300 h-full">
+                <div className="pl-16 sm:pl-20 lg:pl-0 w-full lg:w-[45%] relative group">
+                  <Card className="relative overflow-hidden p-6 sm:p-8 hover:-translate-y-2 transition-all duration-300 h-full">
                     {/* Decorative Watermark Number */}
                     <div className="absolute -right-2 -bottom-6 text-9xl font-black text-neutral-100 opacity-60 z-0 select-none group-hover:text-primary/5 transition-colors duration-500">
                       0{item.step}
