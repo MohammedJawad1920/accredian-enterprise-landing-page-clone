@@ -27,7 +27,7 @@ const STEPS = [
 
 export const HowItWorks: React.FC = () => {
   return (
-    <section className="py-16 sm:py-24 bg-white">
+    <section id="how-it-works" className="py-16 sm:py-24 bg-white scroll-mt-20">
       <Container>
         <SectionHeading
           title="How It Works"

@@ -37,7 +37,7 @@ export const Testimonials: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-16 sm:py-24 bg-neutral-50">
+    <section id="testimonials" className="py-16 sm:py-24 bg-neutral-50 scroll-mt-20">
       <Container>
         <SectionHeading
           title="What Our Partners Say"

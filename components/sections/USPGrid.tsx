@@ -35,7 +35,7 @@ export const USPGrid: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-16 sm:py-24 bg-white">
+    <section id="programs" className="py-16 sm:py-24 bg-white scroll-mt-20">
       <Container>
         <SectionHeading
           title="Why Enterprises Choose Us"

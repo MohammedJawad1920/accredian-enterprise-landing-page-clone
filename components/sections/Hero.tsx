@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/Button";
 
 export const Hero = () => {
   return (
-    <section className="relative overflow-hidden bg-white pt-24 pb-16 lg:pt-32 lg:pb-24">
+    <section id="home" className="relative overflow-hidden bg-white pt-24 pb-16 lg:pt-32 lg:pb-24 scroll-mt-20">
       <Container>
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-8">
           {/* Text Content */}

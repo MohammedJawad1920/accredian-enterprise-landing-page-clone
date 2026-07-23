@@ -19,7 +19,7 @@ const logos: LogoInfo[] = [
 
 export const TrustedByLogos = () => {
   return (
-    <section className="py-12 bg-neutral-50 border-y border-neutral-200">
+    <section id="clients" className="py-12 bg-neutral-50 border-y border-neutral-200 scroll-mt-20">
       <Container>
         <div className="flex flex-col items-center justify-center space-y-8">
           <p className="text-sm font-semibold text-neutral-500 uppercase tracking-wider text-center">

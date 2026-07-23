@@ -44,25 +44,15 @@ export const Navbar = () => {
                 priority
               />
             </Link>
-            <div className="hidden md:flex items-center gap-6">
-              <Link
-                href="#programs"
-                className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors"
-              >
-                Programs
-              </Link>
-              <Link
-                href="#about"
-                className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors"
-              >
-                About Us
-              </Link>
-              <Link
-                href="#contact"
-                className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors"
-              >
-                Contact
-              </Link>
+            <div className="hidden xl:flex items-center gap-4">
+              <Link href="#home" className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors">Home</Link>
+              <Link href="#stats" className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors">Stats</Link>
+              <Link href="#clients" className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors">Clients</Link>
+              <Link href="#edge" className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors">Accredian Edge</Link>
+              <Link href="#programs" className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors">Why Us</Link>
+              <Link href="#offerings" className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors">Programs</Link>
+              <Link href="#how-it-works" className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors">How It Works</Link>
+              <Link href="#testimonials" className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors">Testimonials</Link>
             </div>
           </div>
           
@@ -124,27 +114,14 @@ export const Navbar = () => {
         <div className="md:hidden border-t border-neutral-100 bg-white shadow-xl absolute w-full left-0">
           <Container>
             <div className="flex flex-col space-y-2 py-4">
-              <Link
-                href="#programs"
-                className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors"
-                onClick={closeMenu}
-              >
-                Programs
-              </Link>
-              <Link
-                href="#about"
-                className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors"
-                onClick={closeMenu}
-              >
-                About Us
-              </Link>
-              <Link
-                href="#contact"
-                className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors"
-                onClick={closeMenu}
-              >
-                Contact
-              </Link>
+              <Link href="#home" className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors" onClick={closeMenu}>Home</Link>
+              <Link href="#stats" className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors" onClick={closeMenu}>Stats</Link>
+              <Link href="#clients" className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors" onClick={closeMenu}>Clients</Link>
+              <Link href="#edge" className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors" onClick={closeMenu}>Accredian Edge</Link>
+              <Link href="#programs" className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors" onClick={closeMenu}>Why Us</Link>
+              <Link href="#offerings" className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors" onClick={closeMenu}>Programs</Link>
+              <Link href="#how-it-works" className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors" onClick={closeMenu}>How It Works</Link>
+              <Link href="#testimonials" className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors" onClick={closeMenu}>Testimonials</Link>
               <div className="pt-4 mt-2 flex flex-col gap-3 border-t border-neutral-100 px-2">
                 <Button
                   variant="outline"

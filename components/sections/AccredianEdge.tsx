@@ -5,7 +5,7 @@ import { SectionHeading } from '@/components/ui/SectionHeading';
 
 export const AccredianEdge = () => {
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section id="edge" className="py-16 md:py-24 bg-white scroll-mt-20">
       <Container>
         <SectionHeading
           title="The Accredian Edge"
