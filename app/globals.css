@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand colors — Primary Accredian blue (Adjustable to match exact brand color later) */
-  --color-primary: #1d4ed8;
-  --color-primary-dark: #1e3a8a;
+  /* Brand colors — Shifted to a richer indigo for a more premium tech feel */
+  --color-primary: #4f46e5;      /* indigo-600 */
+  --color-primary-dark: #4338ca; /* indigo-700 */
 
   /* Neutral scale */
   --color-neutral-950: #020617;

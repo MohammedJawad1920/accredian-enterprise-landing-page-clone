@@ -44,7 +44,7 @@ export const ProgramCategories: React.FC = () => {
               className="text-left w-full h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-2xl transition-shadow group"
             >
               <Card 
-                className="flex flex-col h-full overflow-hidden transition-all duration-200 group-hover:-translate-y-1 group-hover:shadow-lg group-hover:border-neutral-300 group-focus-visible:-translate-y-1 group-focus-visible:shadow-lg group-focus-visible:border-neutral-300" 
+                className="flex flex-col h-full overflow-hidden transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] group-hover:border-primary/20 group-focus-visible:-translate-y-1 group-focus-visible:shadow-[0_8px_30px_rgba(0,0,0,0.08)] group-focus-visible:border-primary/20" 
                 hover={false}
               >
                 <div className="relative h-48 sm:h-52 -mt-6 -mx-6 mb-6 overflow-hidden">

@@ -13,7 +13,7 @@ export const Card: React.FC<CardProps> = ({
   ...props
 }) => {
   const hoverStyles = hover
-    ? "transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-neutral-300"
+    ? "transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:border-primary/20"
     : "";
 
   return (
