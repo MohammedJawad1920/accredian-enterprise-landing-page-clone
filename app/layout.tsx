@@ -14,6 +14,12 @@ export const metadata: Metadata = {
   title: "Accredian Enterprise",
   description:
     "Transform your workforce with Accredian Enterprise — premier upskilling, executive education, and L&D programs tailored for high-impact teams.",
+  openGraph: {
+    title: "Accredian Enterprise",
+    description:
+      "Transform your workforce with Accredian Enterprise — premier upskilling, executive education, and L&D programs tailored for high-impact teams.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

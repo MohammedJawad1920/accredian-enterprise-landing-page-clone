@@ -12,7 +12,7 @@ export const Footer = () => {
             <Link href="/" className="inline-block mb-6">
               <Image
                 src="/images/logo.webp"
-                alt="Accredian Logo"
+                alt="Accredian Enterprise"
                 width={130}
                 height={38}
                 className="h-8 w-auto brightness-0 invert object-contain"

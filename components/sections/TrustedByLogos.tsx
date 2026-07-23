@@ -9,12 +9,12 @@ interface LogoInfo {
 }
 
 const logos: LogoInfo[] = [
-  { name: "ADP", src: "/logos/adp.svg", alt: "ADP logo" },
-  { name: "Bayer", src: "/logos/bayer.svg", alt: "Bayer logo" },
-  { name: "CRIF", src: "/logos/crif.png", alt: "CRIF logo" },
-  { name: "HCL", src: "/logos/hcl.png", alt: "HCL logo" },
-  { name: "IBM", src: "/logos/ibm.png", alt: "IBM logo" },
-  { name: "Reliance Industries", src: "/logos/rel.png", alt: "Reliance Industries logo" },
+  { name: "ADP", src: "/logos/adp.svg", alt: "ADP" },
+  { name: "Bayer", src: "/logos/bayer.svg", alt: "Bayer" },
+  { name: "CRIF", src: "/logos/crif.png", alt: "CRIF" },
+  { name: "HCL", src: "/logos/hcl.png", alt: "HCL" },
+  { name: "IBM", src: "/logos/ibm.png", alt: "IBM" },
+  { name: "Reliance Industries", src: "/logos/rel.png", alt: "Reliance Industries" },
 ];
 
 export const TrustedByLogos = () => {

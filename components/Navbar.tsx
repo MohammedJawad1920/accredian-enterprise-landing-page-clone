@@ -37,7 +37,7 @@ export const Navbar = () => {
             <Link href="/" className="flex items-center flex-shrink-0" onClick={closeMenu}>
               <Image
                 src="/images/logo.webp"
-                alt="Accredian Logo"
+                alt="Accredian Enterprise"
                 width={130}
                 height={38}
                 className="h-8 sm:h-9 w-auto object-contain"

@@ -86,7 +86,7 @@ export const Testimonials: React.FC = () => {
                   "{testimonial.quote}"
                 </p>
                 <div className="mt-auto">
-                  <h4 className="font-bold text-neutral-900">{testimonial.name}</h4>
+                  <h3 className="font-bold text-neutral-900">{testimonial.name}</h3>
                   <p className="text-sm text-neutral-600">{testimonial.title}</p>
                   <p className="text-sm font-semibold text-primary mt-1">
                     {testimonial.company}
