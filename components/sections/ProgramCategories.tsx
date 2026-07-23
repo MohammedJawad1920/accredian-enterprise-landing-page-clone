@@ -43,13 +43,16 @@ export const ProgramCategories: React.FC = () => {
               type="button"
               className="text-left w-full h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-2xl transition-shadow group"
             >
-              <Card className="flex flex-col h-full overflow-hidden">
+              <Card 
+                className="flex flex-col h-full overflow-hidden transition-all duration-200 group-hover:-translate-y-1 group-hover:shadow-lg group-hover:border-neutral-300 group-focus-visible:-translate-y-1 group-focus-visible:shadow-lg group-focus-visible:border-neutral-300" 
+                hover={false}
+              >
                 <div className="relative h-48 sm:h-52 -mt-6 -mx-6 mb-6 overflow-hidden">
                   <Image
                     src={category.image}
                     alt={`${category.title} program`}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105 group-focus-visible:scale-105"
                   />
                 </div>
                 <div className="flex-grow flex flex-col">

@@ -20,7 +20,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 ## Approach
 
-The architecture relies entirely on the Next.js App Router, combining reusable UI primitives (Container, Card, SectionHeading) into highly cohesive, responsive page sections. Styling is driven by the modern, CSS-native approach of Tailwind CSS v4, keeping configuration lightweight. To faithfully satisfy the assignment's API-integration requirement without over-engineering a database, the project utilizes a single mock Route Handler (`GET /api/content`). This local JSON-powered backend is consumed client-side by dynamic sections (like `USPGrid` and `Testimonials`), which elegantly handle asynchronous fetching alongside skeleton loaders and robust error fallback states.
+The architecture relies entirely on the Next.js App Router, combining reusable UI primitives (Container, Card, SectionHeading) into highly cohesive, responsive page sections. Styling is driven by the modern, CSS-native approach of Tailwind CSS v4, keeping configuration lightweight. To faithfully satisfy the assignment's API-integration requirement without over-engineering a database, the project utilizes a single mock Route Handler (`GET /api/content`). This local JSON-powered backend is consumed client-side by dynamic sections (like `USPGrid` and `Testimonials`), which elegantly handle asynchronous fetching alongside skeleton loaders and robust error fallback states. Additionally, a `POST /api/lead-capture` endpoint logs form submissions server-side; in production, this would be swapped out for a real email or CRM integration.
 
 ## AI Usage
 
@@ -41,5 +41,4 @@ Given a broader scope and more time, the following enhancements would be priorit
 - **Testimonial Carousel:** Upgrade the current static testimonials grid into an interactive sliding carousel.
 
 **Features & Polish**
-- **Lead Capture Form & Backend (Deferred Task D.1):** Implement the full lead-capture mechanism with server-side validation and database persistence.
 - **Dark Mode Support:** Expand the Tailwind v4 CSS variables to support seamless light/dark mode toggling.

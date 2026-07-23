@@ -53,6 +53,7 @@ export const Navbar = () => {
               <Link href="#offerings" className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors">Programs</Link>
               <Link href="#how-it-works" className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors">How It Works</Link>
               <Link href="#testimonials" className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors">Testimonials</Link>
+              <Link href="#contact" className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors">Contact</Link>
             </div>
           </div>
           
@@ -122,6 +123,7 @@ export const Navbar = () => {
               <Link href="#offerings" className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors" onClick={closeMenu}>Programs</Link>
               <Link href="#how-it-works" className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors" onClick={closeMenu}>How It Works</Link>
               <Link href="#testimonials" className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors" onClick={closeMenu}>Testimonials</Link>
+              <Link href="#contact" className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors" onClick={closeMenu}>Contact</Link>
               <div className="pt-4 mt-2 flex flex-col gap-3 border-t border-neutral-100 px-2">
                 <Button
                   variant="outline"
