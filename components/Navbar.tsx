@@ -30,7 +30,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b border-neutral-200 bg-white/80 backdrop-blur-md">
+    <nav className="sticky top-0 z-50 w-full border-b border-neutral-200/60 bg-white/80 backdrop-blur-xl shadow-[0_4px_30px_rgba(0,0,0,0.03)] transition-all duration-300">
       <Container>
         <div className="flex h-16 sm:h-20 items-center justify-between">
           <div className="flex items-center gap-8 lg:gap-12">
@@ -44,24 +44,21 @@ export const Navbar = () => {
                 priority
               />
             </Link>
-            <div className="hidden xl:flex items-center gap-4">
-              <Link href="#home" className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors">Home</Link>
-              <Link href="#stats" className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors">Stats</Link>
-              <Link href="#clients" className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors">Clients</Link>
-              <Link href="#edge" className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors">Accredian Edge</Link>
-              <Link href="#programs" className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors">Why Us</Link>
-              <Link href="#offerings" className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors">Programs</Link>
-              <Link href="#how-it-works" className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors">How It Works</Link>
-              <Link href="#testimonials" className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors">Testimonials</Link>
-              <Link href="#contact" className="text-sm font-semibold text-neutral-600 hover:text-primary transition-colors">Contact</Link>
+            <div className="hidden xl:flex items-center gap-1">
+              <Link href="#home" className="px-3 py-2 rounded-full text-sm font-semibold text-neutral-600 hover:text-primary hover:bg-primary/5 transition-all duration-200">Home</Link>
+              <Link href="#stats" className="px-3 py-2 rounded-full text-sm font-semibold text-neutral-600 hover:text-primary hover:bg-primary/5 transition-all duration-200">Stats</Link>
+              <Link href="#clients" className="px-3 py-2 rounded-full text-sm font-semibold text-neutral-600 hover:text-primary hover:bg-primary/5 transition-all duration-200">Clients</Link>
+              <Link href="#edge" className="px-3 py-2 rounded-full text-sm font-semibold text-neutral-600 hover:text-primary hover:bg-primary/5 transition-all duration-200">Accredian Edge</Link>
+              <Link href="#programs" className="px-3 py-2 rounded-full text-sm font-semibold text-neutral-600 hover:text-primary hover:bg-primary/5 transition-all duration-200">Why Us</Link>
+              <Link href="#offerings" className="px-3 py-2 rounded-full text-sm font-semibold text-neutral-600 hover:text-primary hover:bg-primary/5 transition-all duration-200">Programs</Link>
+              <Link href="#how-it-works" className="px-3 py-2 rounded-full text-sm font-semibold text-neutral-600 hover:text-primary hover:bg-primary/5 transition-all duration-200">How It Works</Link>
+              <Link href="#testimonials" className="px-3 py-2 rounded-full text-sm font-semibold text-neutral-600 hover:text-primary hover:bg-primary/5 transition-all duration-200">Testimonials</Link>
+              <Link href="#contact" className="px-3 py-2 rounded-full text-sm font-semibold text-neutral-600 hover:text-primary hover:bg-primary/5 transition-all duration-200">Contact</Link>
             </div>
           </div>
           
           <div className="hidden md:flex items-center gap-3 sm:gap-4">
-            <Button variant="outline" size="sm" href="#login">
-              Login
-            </Button>
-            <Button variant="primary" size="sm" href="#contact">
+            <Button variant="primary" size="sm" href="#contact" className="rounded-full px-6 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all">
               Contact Us
             </Button>
           </div>
@@ -115,27 +112,19 @@ export const Navbar = () => {
         <div className="md:hidden border-t border-neutral-100 bg-white shadow-xl absolute w-full left-0">
           <Container>
             <div className="flex flex-col space-y-2 py-4">
-              <Link href="#home" className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors" onClick={closeMenu}>Home</Link>
-              <Link href="#stats" className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors" onClick={closeMenu}>Stats</Link>
-              <Link href="#clients" className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors" onClick={closeMenu}>Clients</Link>
-              <Link href="#edge" className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors" onClick={closeMenu}>Accredian Edge</Link>
-              <Link href="#programs" className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors" onClick={closeMenu}>Why Us</Link>
-              <Link href="#offerings" className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors" onClick={closeMenu}>Programs</Link>
-              <Link href="#how-it-works" className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors" onClick={closeMenu}>How It Works</Link>
-              <Link href="#testimonials" className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors" onClick={closeMenu}>Testimonials</Link>
-              <Link href="#contact" className="px-2 py-3 text-base font-semibold text-neutral-800 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors" onClick={closeMenu}>Contact</Link>
+              <Link href="#home" className="px-4 py-3 text-base font-semibold text-neutral-700 hover:text-primary hover:bg-primary/5 rounded-xl transition-all" onClick={closeMenu}>Home</Link>
+              <Link href="#stats" className="px-4 py-3 text-base font-semibold text-neutral-700 hover:text-primary hover:bg-primary/5 rounded-xl transition-all" onClick={closeMenu}>Stats</Link>
+              <Link href="#clients" className="px-4 py-3 text-base font-semibold text-neutral-700 hover:text-primary hover:bg-primary/5 rounded-xl transition-all" onClick={closeMenu}>Clients</Link>
+              <Link href="#edge" className="px-4 py-3 text-base font-semibold text-neutral-700 hover:text-primary hover:bg-primary/5 rounded-xl transition-all" onClick={closeMenu}>Accredian Edge</Link>
+              <Link href="#programs" className="px-4 py-3 text-base font-semibold text-neutral-700 hover:text-primary hover:bg-primary/5 rounded-xl transition-all" onClick={closeMenu}>Why Us</Link>
+              <Link href="#offerings" className="px-4 py-3 text-base font-semibold text-neutral-700 hover:text-primary hover:bg-primary/5 rounded-xl transition-all" onClick={closeMenu}>Programs</Link>
+              <Link href="#how-it-works" className="px-4 py-3 text-base font-semibold text-neutral-700 hover:text-primary hover:bg-primary/5 rounded-xl transition-all" onClick={closeMenu}>How It Works</Link>
+              <Link href="#testimonials" className="px-4 py-3 text-base font-semibold text-neutral-700 hover:text-primary hover:bg-primary/5 rounded-xl transition-all" onClick={closeMenu}>Testimonials</Link>
+              <Link href="#contact" className="px-4 py-3 text-base font-semibold text-neutral-700 hover:text-primary hover:bg-primary/5 rounded-xl transition-all" onClick={closeMenu}>Contact</Link>
               <div className="pt-4 mt-2 flex flex-col gap-3 border-t border-neutral-100 px-2">
                 <Button
-                  variant="outline"
-                  className="w-full justify-center"
-                  href="#login"
-                  onClick={closeMenu}
-                >
-                  Login
-                </Button>
-                <Button
                   variant="primary"
-                  className="w-full justify-center"
+                  className="w-full justify-center rounded-full shadow-md py-3 text-base"
                   href="#contact"
                   onClick={closeMenu}
                 >
