@@ -30,7 +30,7 @@ export const TrustedByLogos = () => {
             {logos.map((logo) => (
               <div 
                 key={logo.name} 
-                className="relative h-10 w-24 sm:h-12 sm:w-28 md:h-14 md:w-32 lg:h-16 lg:w-36 flex items-center justify-center grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300"
+                className="relative h-10 w-24 sm:h-12 sm:w-28 md:h-14 md:w-32 lg:h-16 lg:w-36 flex items-center justify-center lg:grayscale lg:hover:grayscale-0 lg:opacity-70 lg:hover:opacity-100 transition-all duration-300"
               >
                 <Image
                   src={logo.src}
