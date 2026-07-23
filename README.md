@@ -28,8 +28,18 @@ This project embraced an AI-assisted development workflow for high-velocity iter
 
 ## Future Improvements
 
-Given a broader scope and more time, the following enhancements would be prioritized:
-- **Lead Capture Form & Backend (Deferred Task D.1):** Implement the full lead-capture mechanism with robust server-side validation and database persistence (e.g., PostgreSQL/Prisma).
-- **Advanced Animations:** Integrate a library like Framer Motion to provide sophisticated scroll-reveal animations and micro-interactions for a premium feel.
+Given a broader scope and more time, the following enhancements would be prioritized to close the remaining gap with the live production site:
+
+**Additional Content Sections**
+- **Domain Expertise:** Implement the icon-card section highlighting industry domains.
+- **Who Should Join:** Add the audience-segment banner.
+- **CAT Framework:** Implement the 3-node conceptual flow section.
+- **FAQ:** Add a collapsible accordion component for frequently asked questions.
+
+**Component Upgrades**
+- **Course Segmentation:** Refactor the current Program Categories concept into full segmentation cards.
+- **Testimonial Carousel:** Upgrade the current static testimonials grid into an interactive sliding carousel.
+
+**Features & Polish**
+- **Lead Capture Form & Backend (Deferred Task D.1):** Implement the full lead-capture mechanism with server-side validation and database persistence.
 - **Dark Mode Support:** Expand the Tailwind v4 CSS variables to support seamless light/dark mode toggling.
-- **Live Content Sourcing:** Transition from local JSON mock data to fetching completely real, dynamic content from a Headless CMS mirroring a true production setup.
