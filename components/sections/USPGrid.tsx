@@ -42,7 +42,7 @@ export const USPGrid: React.FC = () => {
           subtitle="Empower your workforce with world-class education tailored for corporate success."
           className="mb-12"
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
           {status === "loading" &&
             Array.from({ length: 6 }).map((_, i) => (
               <Card key={`skeleton-${i}`} className="flex flex-col h-full animate-pulse">
@@ -61,12 +61,24 @@ export const USPGrid: React.FC = () => {
           )}
 
           {status === "success" &&
-            features.map((feature) => (
-              <Card key={feature.id} className="flex flex-col h-full">
-                <h3 className="text-xl font-bold text-neutral-900 mb-3">
+            features.map((feature, index) => (
+              <Card 
+                key={feature.id} 
+                className={`flex flex-col h-full relative group overflow-hidden ${
+                  index === 0 ? 'sm:col-span-2 lg:col-span-2 bg-gradient-to-br from-white to-primary/5' : ''
+                }`}
+              >
+                {/* Decorative Icon */}
+                <div className={`mb-6 rounded-xl flex items-center justify-center shrink-0 ${index === 0 ? 'w-14 h-14 bg-primary text-white shadow-lg' : 'w-12 h-12 bg-primary/10 text-primary'}`}>
+                  <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                
+                <h3 className={`font-bold text-neutral-900 mb-3 ${index === 0 ? 'text-2xl' : 'text-xl'}`}>
                   {feature.title}
                 </h3>
-                <p className="text-neutral-600 leading-relaxed flex-grow">
+                <p className={`text-neutral-600 leading-relaxed flex-grow ${index === 0 ? 'text-lg max-w-2xl' : ''}`}>
                   {feature.description}
                 </p>
               </Card>

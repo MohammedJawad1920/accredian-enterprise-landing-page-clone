@@ -79,14 +79,46 @@ export const LeadCapture: React.FC = () => {
   return (
     <section id="contact" className="py-16 sm:py-24 bg-white scroll-mt-20">
       <Container>
-        <div className="max-w-3xl mx-auto">
-          <SectionHeading
-            title="Let's Build Your Enterprise Program"
-            subtitle="Get in touch to discover how Accredian can transform your workforce with cutting-edge skills."
-            className="mb-10"
-          />
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Left Panel: Value Prop & Trust Markers */}
+          <div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-6 leading-tight">
+              Let's Build Your <br />
+              <span className="bg-gradient-to-r from-primary to-violet-500 bg-clip-text text-transparent">Enterprise Program</span>
+            </h2>
+            <p className="text-lg text-neutral-600 mb-10 leading-relaxed">
+              Get in touch to discover how Accredian can transform your workforce with cutting-edge skills. Our enterprise team will get back to you within 24 hours.
+            </p>
+            
+            <div className="flex flex-col gap-8">
+               <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center shrink-0 text-primary">
+                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-neutral-900 text-lg mb-1">Fast Onboarding</h4>
+                    <p className="text-neutral-600 leading-relaxed">Launch your custom corporate training program in weeks, not months.</p>
+                  </div>
+               </div>
+               <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center shrink-0 text-primary">
+                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-neutral-900 text-lg mb-1">Expert Instructors</h4>
+                    <p className="text-neutral-600 leading-relaxed">Learn directly from industry leaders and practitioners with real-world experience.</p>
+                  </div>
+               </div>
+            </div>
+          </div>
 
-          <div className="bg-neutral-50 p-8 sm:p-12 rounded-3xl border border-neutral-200 shadow-sm">
+          {/* Right Panel: Form */}
+          <div className="bg-white p-8 sm:p-10 rounded-3xl border border-neutral-100 shadow-[0_8px_30px_rgba(0,0,0,0.08)] relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
             {status === 'success' ? (
               <div className="bg-green-50 border border-green-200 text-green-800 p-8 rounded-2xl text-center">
                 <svg className="w-12 h-12 text-green-500 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

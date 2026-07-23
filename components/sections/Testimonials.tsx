@@ -44,7 +44,7 @@ export const Testimonials: React.FC = () => {
           subtitle="Hear from industry leaders who have transformed their workforce with our programs."
           className="mb-12"
         />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="flex overflow-x-auto snap-x snap-mandatory md:grid md:grid-cols-3 gap-6 pb-8 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 [&::-webkit-scrollbar]:hidden">
           {status === "loading" &&
             Array.from({ length: 3 }).map((_, i) => (
               <Card key={`skeleton-${i}`} className="flex flex-col h-full animate-pulse">
@@ -70,8 +70,15 @@ export const Testimonials: React.FC = () => {
 
           {status === "success" &&
             testimonials.map((testimonial) => (
-              <Card key={testimonial.id} className="flex flex-col h-full">
-                <div className="text-primary opacity-20 mb-4">
+              <div key={testimonial.id} className="min-w-[85vw] sm:min-w-[60vw] md:min-w-0 snap-center snap-always">
+                <Card className="flex flex-col h-full relative overflow-hidden group">
+                  {/* Watermark Quote */}
+                  <div className="absolute -top-4 -right-2 text-[120px] leading-none font-serif text-neutral-100 opacity-50 z-0 select-none pointer-events-none transition-colors duration-300 group-hover:text-primary/5">
+                    "
+                  </div>
+                  
+                  <div className="relative z-10 flex flex-col h-full">
+                    <div className="text-primary mb-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="36"
@@ -85,14 +92,16 @@ export const Testimonials: React.FC = () => {
                 <p className="text-neutral-700 leading-relaxed flex-grow italic mb-6">
                   "{testimonial.quote}"
                 </p>
-                <div className="mt-auto">
-                  <h3 className="font-bold text-neutral-900">{testimonial.name}</h3>
-                  <p className="text-sm text-neutral-600">{testimonial.title}</p>
-                  <p className="text-sm font-semibold text-primary mt-1">
-                    {testimonial.company}
-                  </p>
-                </div>
-              </Card>
+                    <div className="mt-auto pt-6 border-t border-neutral-100">
+                      <h3 className="font-bold text-neutral-900">{testimonial.name}</h3>
+                      <p className="text-sm text-neutral-600">{testimonial.title}</p>
+                      <p className="text-sm font-semibold text-primary mt-1">
+                        {testimonial.company}
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+              </div>
             ))}
         </div>
       </Container>

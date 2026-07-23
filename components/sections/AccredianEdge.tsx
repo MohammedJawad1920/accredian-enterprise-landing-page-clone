@@ -13,7 +13,10 @@ export const AccredianEdge = () => {
           align="center"
         />
         
-        <div className="mt-12 flex justify-center w-full">
+        <div className="mt-12 flex justify-center w-full relative">
+          {/* Ambient Glow */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] max-w-4xl h-[60%] bg-primary/10 rounded-[100%] blur-[80px] -z-10 pointer-events-none" />
+          
           {/* Desktop SVG - Hidden on mobile, block on md and up */}
           <div className="hidden md:block w-full max-w-5xl">
             <Image

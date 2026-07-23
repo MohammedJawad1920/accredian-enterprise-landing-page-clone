@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/Container";
 
 export const Footer = () => {
   return (
-    <footer className="bg-neutral-900 text-white pt-16 pb-8 border-t border-neutral-800">
+    <footer className="bg-neutral-950 text-white pt-16 pb-8 border-t-4 border-primary">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 mb-12">
           <div className="md:col-span-4 lg:col-span-5">

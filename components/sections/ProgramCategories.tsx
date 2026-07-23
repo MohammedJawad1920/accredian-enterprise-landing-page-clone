@@ -44,22 +44,26 @@ export const ProgramCategories: React.FC = () => {
               className="text-left w-full h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-2xl transition-shadow group"
             >
               <Card 
-                className="flex flex-col h-full overflow-hidden transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] group-hover:border-primary/20 group-focus-visible:-translate-y-1 group-focus-visible:shadow-[0_8px_30px_rgba(0,0,0,0.08)] group-focus-visible:border-primary/20" 
+                className="relative flex flex-col h-[320px] sm:h-[380px] overflow-hidden group-hover:-translate-y-2 transition-all duration-300 border-none rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.08)] group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)] p-0" 
                 hover={false}
               >
-                <div className="relative h-48 sm:h-52 -mt-6 -mx-6 mb-6 overflow-hidden">
-                  <Image
-                    src={category.image}
-                    alt={`${category.title} program`}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105 group-focus-visible:scale-105"
-                  />
-                </div>
-                <div className="flex-grow flex flex-col">
-                  <h3 className="text-xl font-bold text-neutral-900 mb-3">
+                {/* Background Image */}
+                <Image
+                  src={category.image}
+                  alt={`${category.title} program`}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                
+                {/* Dark Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/90 via-neutral-900/40 to-transparent transition-opacity duration-300 group-hover:from-neutral-900 group-hover:via-neutral-900/60" />
+                
+                {/* Content Overlay */}
+                <div className="relative h-full flex flex-col justify-end p-6 sm:p-8 text-white z-10">
+                  <h3 className="text-2xl font-bold mb-2 transform transition-transform duration-300 group-hover:-translate-y-1">
                     {category.title}
                   </h3>
-                  <p className="text-neutral-600 leading-relaxed flex-grow">
+                  <p className="text-neutral-200 leading-relaxed text-sm opacity-90 transition-all duration-300 group-hover:opacity-100 group-hover:-translate-y-1">
                     {category.description}
                   </p>
                 </div>
