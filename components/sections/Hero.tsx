@@ -14,7 +14,7 @@ export const Hero = () => {
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-neutral-900 mb-6 leading-tight sm:leading-tight lg:leading-tight">
               Empower Your Workforce with <br className="hidden lg:block" />
-              <span className="bg-gradient-to-r from-primary to-violet-500 bg-clip-text text-transparent">Premier Technical Education</span>
+              <span className="bg-gradient-to-r from-primary to-sky-400 bg-clip-text text-transparent">Premier Technical Education</span>
             </h1>
             <p className="text-lg sm:text-xl text-neutral-600 mb-8 max-w-2xl mx-auto lg:mx-0">
               Transform your enterprise with specialized learning pathways. We bridge the skills gap by connecting your teams with cutting-edge curriculum designed by top-tier academic institutions, driving measurable outcomes for your business.

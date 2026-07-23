@@ -84,7 +84,7 @@ export const LeadCapture: React.FC = () => {
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-6 leading-tight">
               Let's Build Your <br />
-              <span className="bg-gradient-to-r from-primary to-violet-500 bg-clip-text text-transparent">Enterprise Program</span>
+              <span className="bg-gradient-to-r from-primary to-sky-400 bg-clip-text text-transparent">Enterprise Program</span>
             </h2>
             <p className="text-lg text-neutral-600 mb-10 leading-relaxed">
               Get in touch to discover how Accredian can transform your workforce with cutting-edge skills. Our enterprise team will get back to you within 24 hours.

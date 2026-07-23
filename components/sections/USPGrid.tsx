@@ -90,7 +90,7 @@ export const USPGrid: React.FC = () => {
                   hover={false}
                 >
                   {/* Floating Icon Box */}
-                  <div className="absolute -top-7 left-8 w-14 h-14 bg-gradient-to-br from-primary to-violet-500 rounded-2xl flex items-center justify-center text-white shadow-lg transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-105">
+                  <div className="absolute -top-7 left-8 w-14 h-14 bg-gradient-to-br from-primary to-sky-400 rounded-2xl flex items-center justify-center text-white shadow-lg transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-105">
                     {getFeatureIcon(index)}
                   </div>
                   
